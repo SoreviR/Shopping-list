@@ -1,0 +1,71 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eee;
+  padding: 0 16px;
+}
+  
+header {
+  
+  background-color: #296f83;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+  
+header h1 {
+  color: #fff;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 200;
+}
+
+.article {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 500px;
+  height: 15px;
+  margin: 16px;
+  float: left;
+}
+
+.article span {
+  font-size: 1.1em;
+  margin-left: 40px;
+  word-wrap: break-word;
+  position: absolute;
+}
+
+.article button {
+  border-radius: 45%;
+  border-color: transparent;
+  color: rgb(228, 37, 37);
+  font-size: 1em;
+  margin-top: -2px;
+  position: absolute;
+  background-color: transparent;
+}
+
+.add-item {
+  display: flex;
+  justify-content: center;
+}
+
+.add-item input, button {
+  margin-top: 50px;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+  
+footer p {
+  color: rgba(85, 83, 83, 0.547);
+}
