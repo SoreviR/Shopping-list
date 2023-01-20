@@ -14,6 +14,16 @@ function App(){
         });
     };
 
+    function deleteItem(id){
+        setArticles(prevArticles => {
+            return prevArticles.filter((articleItem, index) => {
+                return index !== id
+            })
+        })
+    }
+
+    
+
     return (
         <div>
             <Header />
@@ -23,7 +33,10 @@ function App(){
             {articles.map((articleItem, index) => {
                 return <Article 
                 key = {index}
-                article= {articleItem}/>
+                id = {index}
+                article= {articleItem}
+                onDelete = {deleteItem}
+                />
             })}
             <Footer />
         </div>
